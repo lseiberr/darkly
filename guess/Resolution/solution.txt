@@ -2,5 +2,6 @@ Le but est de trouver la page /directory
 On tente avec http://192.168.64.17/?page=../
 En ajoutant des ../ le messages de la pop up change laissant penser etre sur la bonne piste
 A un moment le message reste le même, avec you can do it
-Alors, après une tentative avec /password puis /passwd puis /etc/password puis /etc/passwd on obtient le flag
+Alors, après une tentative /etc/passwd on obtient le flag
+Ref : https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion
 

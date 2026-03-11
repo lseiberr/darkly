@@ -18,7 +18,7 @@ def get_password_list(file_path):
 		return [line.strip() for line in file]
 
 def main():
-	password_file = Path("/Users/lseiberr/42Post/darkly/brute-force/Resolution/password.txt")
+	password_file = Path("/Users/lseiberr/42Post/darkly/bruteforce/Resolution/password.txt")
 	url = "http://192.168.64.17/index.php?page=signin"
 	username = "admin"
 	password_list = get_password_list(password_file)
