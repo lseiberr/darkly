@@ -1,0 +1,3 @@
+Après vérification du fichier robots.txt, il y a un lien disable /.hidden
+Chaque lien donne accés à un Readme, il faut trouver le lien avec le flag
+Lancement du script pour vérifier chaque lien

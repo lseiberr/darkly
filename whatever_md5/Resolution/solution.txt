@@ -1,0 +1,8 @@
+http://192.168.64.17/robots.txt donne un autre lien
+http://192.168.64.17/whatever/ aui permet de telecharger un fichier httpasswd
+Ce fichier contient : root:437394baff5aa33daa618be47b75cb49
+Apres un dechiffrage MD5 sur le site https://crackstation.net/ on obtient :
+Hash	Type	Result
+437394baff5aa33daa618be47b75cb49	md5	qwerty123@
+
+Sur la page de login, impossible de se connecter 

@@ -1,0 +1,3 @@
+Sur cette page http://192.168.64.17/?page=recover#
+Avec inspecter élément, on constate qu'un mail de récupération est mis.
+En le mettant en visible, on peut le modifier, en le laissant à vide et en submit, le flag apparait.
