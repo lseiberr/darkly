@@ -1,0 +1,16 @@
+Comment les développeurs peuvent-ils prévenir les attaques XSS ?
+Les développeurs peuvent jouer un rôle essentiel dans la prévention des attaques XSS en mettant en place quelques bonnes pratiques essentielles :
+
+Validation des saisies
+Les développeurs peuvent mettre en place des règles qui empêchent les utilisateurs de publier des données sur une page ou dans un formulaire lorsqu'elles ne répondent pas à certains critères. Par exemple, si un formulaire invite à saisir un numéro de sécurité sociale ou un numéro de téléphone, les développeurs peuvent créer une règle selon laquelle cette entrée ne doit contenir que des chiffres, des tirets ou des parenthèses. Pour une prévention des attaques plus robuste, les développeurs peuvent définir des règles de validation qui rejettent explicitement les balises ou les caractères couramment utilisés dans les attaques XSS, tels que les balises < script >.
+
+Les développeurs peuvent également empêcher les utilisateurs d'inscrire du code HTML dans les commentaires, les messages et les entrées de formulaires. Le contenu HTML peut être un moyen de publier des scripts malveillants ou de dissimuler des liens vers des URL qui contiennent du code malveillant.
+
+Si les entreprises souhaitent permettre aux utilisateurs de publier du contenu enrichi, comme du texte ou des images mis en forme, elles peuvent intégrer Markdown (un langage de balisage léger) ou activer la mise en forme d'un texte enrichi au sein d'un éditeur WYSIWYG (« Ce que vous voyez correspond à ce que vous obtenez »). Ces deux méthodes constituent des solutions plus sûres pour la prise en charge de contenu enrichi.
+
+Assainissement des données
+Les développeurs peuvent prévenir les dommages liés aux attaques XSS en mettant en œuvre une procédure d'examen des données après qu'elles ont été publiées sur le serveur web, mais avant qu'elles ne soient affichées à un autre utilisateur. Même si les développeurs autorisent l'utilisation du code HTML, par exemple, ils peuvent assainir toutes les saisies HTML et éliminer tout le code malveillant avant qu'il ne s'exécute dans un navigateur.
+
+L'encodage et l'ajout de préfixe d'échappement fonctionnent selon un principe similaire. L'idée est de transformer les scripts malveillants ou tout autre code présent dans les saisies de l'utilisateur en texte ordinaire avant toute inscription sur une page. L'encodage de sortie convertit le code dans un format différent ; « l'échappement » ajoute des caractères spéciaux au code (comme des barres obliques inverses ou des guillemets) Dans les deux cas, les navigateurs interprètera la saisie comme du texte et non comme un code à exécuter. Tandis que l'assainissement filtre le code, l'encodage et l'ajout de caractères d'échappement préservent le code tout en le rendant inoffensif.
+
+Source : https://www.cloudflare.com/fr-fr/learning/security/how-to-prevent-xss-attacks/
