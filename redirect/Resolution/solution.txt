@@ -1,0 +1,2 @@
+Pour chaque lien de redirection comme http://192.168.64.17/index.php?page=redirect&site=twitter
+si on change site par n'importe quoi on obtient le flag

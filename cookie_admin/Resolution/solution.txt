@@ -1,0 +1,5 @@
+En inspectant les cookies on observe : un cookie is a admin avec ce hash : 68934a3e9455fa72420237eb05902327
+Sur le site https://crackstation.net/ on observe que ce hash signifie False.
+En le modifiant en true hashé sur ce site : https://www.md5hashgenerator.com/
+On abitent la valeur : b326b5062b2f0e69046810717534cb09
+On modifie le cookie est voilà
